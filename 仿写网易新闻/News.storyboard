@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="eod-s2-DUM">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--News View Controller-->
+        <scene sceneID="Qee-Uq-PnM">
+            <objects>
+                <viewController id="111-cn-pZQ" customClass="NewsViewController" customModule="仿写网易新闻" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="lAS-XS-fQp"/>
+                        <viewControllerLayoutGuide type="bottom" id="f9O-oR-iw8"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3tg-Hu-euM">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="y2j-iG-Bbf"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iBP-e6-zBl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1133" y="378"/>
+        </scene>
+        <!--新闻-->
+        <scene sceneID="7o2-Xh-FiY">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="eod-s2-DUM" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="新闻" image="tabbar_icon_news_normal" selectedImage="tabbar_icon_news_highlight" id="aeo-ax-pQY"/>
+                    <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="HBv-iL-lxO">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="111-cn-pZQ" kind="relationship" relationship="rootViewController" id="wph-Nu-p2b"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TDf-Yx-vHe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="321" y="378"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="tabbar_icon_news_highlight" width="21" height="16"/>
+        <image name="tabbar_icon_news_normal" width="21" height="16"/>
+    </resources>
+</document>
